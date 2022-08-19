@@ -1,0 +1,9 @@
+tx2 = await casino.acceptBet(hashA, valBwin, {value: 1e5})
+tx1 = await casino.proposeBet(hashA,{ value: 1e5})
+const valBwin = ethers.utils.keccak256(0x600D60A7)
+const hashA = ethers.utils.keccak256(valA)
+const valA = ethers.utils.keccak256(0xBAD060A7) 
+casino = await factory.deploy()
+factory = await factory
+factory = ethers.getContractFactory("Casino")
+signer = await ethers.getSigner();
